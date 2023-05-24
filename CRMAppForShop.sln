@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMBLL", "ClassLibrary1\CRMBLL.csproj", "{6896B288-5AE1-49F3-A560-276CA65FE4C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMUI", "CRMUI\CRMUI.csproj", "{46AF1989-122B-4654-BE0F-1D636DAC7618}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6896B288-5AE1-49F3-A560-276CA65FE4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6896B288-5AE1-49F3-A560-276CA65FE4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6896B288-5AE1-49F3-A560-276CA65FE4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46AF1989-122B-4654-BE0F-1D636DAC7618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46AF1989-122B-4654-BE0F-1D636DAC7618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46AF1989-122B-4654-BE0F-1D636DAC7618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46AF1989-122B-4654-BE0F-1D636DAC7618}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
