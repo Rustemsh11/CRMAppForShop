@@ -29,6 +29,7 @@ namespace CRMUI
             var data = new Catalog<T>(dbSet);
             data.Show();
         }
+        
 
         private void tovarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -59,6 +60,26 @@ namespace CRMUI
             if (form.ShowDialog() == DialogResult.OK)
             {
                 db.Customers.Add(form.Customer);
+                db.SaveChanges();
+            }
+        }
+
+        private void addSellerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SellerForm form = new SellerForm();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                db.Sellers.Add(form.Seller);
+                db.SaveChanges();
+            }
+        }
+
+        private void addTovarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductForm form = new ProductForm();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                db.Products.Add(form.Product);
                 db.SaveChanges();
             }
         }

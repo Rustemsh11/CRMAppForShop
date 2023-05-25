@@ -30,6 +30,9 @@ namespace CRMUI
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.addNew = new System.Windows.Forms.Button();
+            this.edit = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,14 +44,45 @@ namespace CRMUI
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 358);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // addNew
+            // 
+            this.addNew.Location = new System.Drawing.Point(24, 406);
+            this.addNew.Name = "addNew";
+            this.addNew.Size = new System.Drawing.Size(100, 32);
+            this.addNew.TabIndex = 1;
+            this.addNew.Text = "Добавить";
+            this.addNew.UseVisualStyleBackColor = true;
+            // 
+            // edit
+            // 
+            this.edit.Location = new System.Drawing.Point(147, 406);
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(100, 32);
+            this.edit.TabIndex = 2;
+            this.edit.Text = "Изменить";
+            this.edit.UseVisualStyleBackColor = true;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
+            // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(268, 406);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(100, 32);
+            this.delete.TabIndex = 3;
+            this.delete.Text = "Удалить";
+            this.delete.UseVisualStyleBackColor = true;
             // 
             // Catalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.delete);
+            this.Controls.Add(this.edit);
+            this.Controls.Add(this.addNew);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Catalog";
             this.Text = "Catalog";
@@ -61,5 +95,8 @@ namespace CRMUI
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button addNew;
+        private System.Windows.Forms.Button edit;
+        private System.Windows.Forms.Button delete;
     }
 }
