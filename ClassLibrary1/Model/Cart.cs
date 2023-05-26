@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ClassLibrary1.Model
 {
-    class Cart:IEnumerable
+    public class Cart:IEnumerable
     {
         public Customer Customer { get; set; }
         public Dictionary<Product, int> Products { get; set; }
@@ -21,7 +21,10 @@ namespace ClassLibrary1.Model
             {
                 Products[product] = ++count;
             }
-            Products.Add(product, 1);
+            else
+            {
+                Products.Add(product, 1);
+            }
         }
 
         public IEnumerator GetEnumerator()
@@ -35,9 +38,14 @@ namespace ClassLibrary1.Model
 
             }
         }
-        //public List<Product> GetAll()
-        //{
-
-        //}
+        public List<Product> GetAll()
+        {
+            var result = new List<Product>();
+            foreach (Product item in this)
+            {
+                result.Add(item);
+            }
+            return result;
+        }
     }
 }
