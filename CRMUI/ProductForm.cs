@@ -37,12 +37,12 @@ namespace CRMUI
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            Product = new Product
-            {
-                Name = productNameTextBox.Text,
-                Count = Convert.ToInt32(countInput.Value),
-                Price = costInput.Value
-            };
+            Product = Product ?? new Product();
+
+            Product.Name = productNameTextBox.Text;
+            Product.Count = Convert.ToInt32(countInput.Value);
+            Product.Price = costInput.Value;
+            Close();
         }
 
         private void label3_Click(object sender, EventArgs e)

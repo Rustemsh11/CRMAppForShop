@@ -29,17 +29,17 @@ namespace CRMUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.customerNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.AddButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // customerNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.customerNameTextBox.Location = new System.Drawing.Point(116, 25);
+            this.customerNameTextBox.Name = "customerNameTextBox";
+            this.customerNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.customerNameTextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -71,7 +71,7 @@ namespace CRMUI
             this.ClientSize = new System.Drawing.Size(265, 205);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.customerNameTextBox);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
@@ -82,7 +82,7 @@ namespace CRMUI
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox customerNameTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button AddButton;
     }

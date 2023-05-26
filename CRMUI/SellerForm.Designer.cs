@@ -31,7 +31,7 @@ namespace CRMUI
         {
             this.AddButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.sellerNameTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // AddButton
@@ -54,12 +54,12 @@ namespace CRMUI
             this.label1.TabIndex = 4;
             this.label1.Text = "Введите имя";
             // 
-            // textBox1
+            // sellerNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.sellerNameTextBox.Location = new System.Drawing.Point(105, 21);
+            this.sellerNameTextBox.Name = "sellerNameTextBox";
+            this.sellerNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sellerNameTextBox.TabIndex = 3;
             // 
             // SellerForm
             // 
@@ -68,7 +68,7 @@ namespace CRMUI
             this.ClientSize = new System.Drawing.Size(251, 273);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.sellerNameTextBox);
             this.Name = "SellerForm";
             this.Text = "SellerForm";
             this.ResumeLayout(false);
@@ -80,6 +80,6 @@ namespace CRMUI
 
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox sellerNameTextBox;
     }
 }

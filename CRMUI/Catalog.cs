@@ -51,9 +51,42 @@ namespace CRMUI
                     if (form.ShowDialog() == DialogResult.OK)
                     {
                         product = form.Product;
+                       
                         dbContext.SaveChanges();
                         dataGridView1.Update();
                         
+                    }
+                }
+            }
+            else if (typeof(T) == typeof(Customer))
+            {
+                var customer = dbSet.Find(id) as Customer;
+                if (customer != null)
+                {
+                    CustomerForm form = new CustomerForm(customer);
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        customer = form.Customer;
+
+                        dbContext.SaveChanges();
+                        dataGridView1.Update();
+
+                    }
+                }
+            }
+            else if (typeof(T) == typeof(Seller))
+            {
+                var seller = dbSet.Find(id) as Seller;
+                if (seller != null)
+                {
+                    SellerForm form = new SellerForm(seller);
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        seller = form.Seller;
+
+                        dbContext.SaveChanges();
+                        dataGridView1.Update();
+
                     }
                 }
             }

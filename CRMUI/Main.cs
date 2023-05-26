@@ -26,7 +26,7 @@ namespace CRMUI
         /// </summary>
         private void GetDataAndShowWindow<T>(DbSet<T> dbSet) where T : class
         {
-            var data = new Catalog<T>(dbSet);
+            var data = new Catalog<T>(dbSet,db);
             data.Show();
         }
         

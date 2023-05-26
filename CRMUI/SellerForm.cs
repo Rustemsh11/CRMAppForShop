@@ -18,13 +18,16 @@ namespace CRMUI
         {
             InitializeComponent();
         }
+        public SellerForm(Seller seller) :this()
+        {
+            Seller = seller ?? new Seller();
+            sellerNameTextBox.Text = Seller.Name;
+        }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            Seller = new Seller()
-            {
-                Name = textBox1.Text
-            };
+            Seller = Seller ?? new Seller();
+            Seller.Name = sellerNameTextBox.Text;
         }
 
         private void CustomerForm_Load(object sender, EventArgs e)
